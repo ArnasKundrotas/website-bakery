@@ -64,3 +64,29 @@ body {
     background: #fff;
     color: #333;
 }
+
+/* Page animation */
+
+#page-1 h1 {
+    transform: translateY(-1200px);
+    animation: heading var(--animate-speed) forwards ease-in;
+}
+
+#page-1 p {
+    transform: translateX(-1800px);
+    animation: text var(--animate-speed) forwards ease-in;
+}
+
+/* Keyframes */
+
+@keyframes heading {
+    to{
+        transform: translateY(0);
+    }
+}
+
+@keyframes text {
+    to{
+        transform: translateY(0);
+    }
+}
