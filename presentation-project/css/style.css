@@ -3,7 +3,7 @@
     --page-2-color: tan;
     --page-3-color: teal;
     --page-4-color: slateblue;
-    --animate-speed: 1s;
+    --animate-speed: 1.2s;
 }
 
 body {
@@ -73,8 +73,8 @@ body {
 }
 
 #page-1 p {
-    transform: translateX(-1800px);
-    animation: text var(--animate-speed) forwards ease-in;
+    transform: translateX(-2500px);
+    animation: text var(--animate-speed) forwards ease-in .5s;
 }
 
 /* Keyframes */
