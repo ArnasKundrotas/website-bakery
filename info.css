@@ -1,6 +1,6 @@
 /* Screen Size
 
-@media (max-width: --- ) {}
+---- @media (max-width: --- ) {}
                            width
 iPhone 6/7/8                375     x 667 px
 iPhone 6/7/8 Plus           414     x 736 px
@@ -11,5 +11,11 @@ iPad                        768     x 1024 px
 iPad Pro                    1024    x 1366 px
 
 Samsung Galaxy S5           360     x 640 px
+
+
+---- Font Awesome
+
+<script src="https://kit.fontawesome.com/082187be3f.js" crossorigin="anonymous"></script>
+
 
 */
