@@ -63,6 +63,9 @@ img {
     background: var(--primary-color);
 }
 
+#main-nav .home-content {
+}
+
 #home-content div {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;

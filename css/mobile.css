@@ -1,0 +1,21 @@
+@media(max-width:768px){
+    #main-nav .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        align-items: center;
+    }
+    
+    #home-content div {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: var(--secondary-color);
+    }
+
+    #home-content div a {
+        padding: 0;
+    }
+}
