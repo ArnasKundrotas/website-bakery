@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #5e1010;
-    --secondary-color: #f99500;
+    --primary-color: #fff;
+    --secondary-color: fff;
     --light-color: #f3f3f3;
     --dark-color: #333;
     /* --max-width: 1100px; */
@@ -56,20 +56,21 @@ img {
 /* OTHER */
 
 #home-content {
-    display: grid;
-    justify-content: center;
-    align-items: center;
     background: var(--primary-color);
-    width: 100vw;
-    height: 100vh;
 }
 
-#home-content a {
+#home-content div {
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
+    text-align: center;
     background: var(--secondary-color);
-    color: var(--primary-color);
+}
+
+#home-content div a {
+    background: var(--secondary-color);
+    color: #333;
     padding: 2rem;
     margin: 1rem;
     font-weight: bold;
