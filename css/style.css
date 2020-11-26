@@ -34,7 +34,7 @@ img {
 /* Navigation BAR */
 
 #main-nav {
-    background: #fff;
+    background: #333;
     position: sticky;
     top: 0;
     z-index: 2;
@@ -45,6 +45,10 @@ img {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 1rem;
     align-items: center;
+}
+
+#main-nav .container .navbar-1 a {
+    color: #fff;
 }
 
 #main-nav .container img {
