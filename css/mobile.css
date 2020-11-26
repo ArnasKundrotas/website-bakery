@@ -3,6 +3,13 @@
         display: grid;
         grid-template-columns: 1fr;
         align-items: center;
+}
+
+@media(max-width:700px){
+    #main-nav .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
     }
     
     #home-content .container {
@@ -17,7 +24,6 @@
     #home-content .container div {
         padding: 1rem;
     }
-}
 
     #home-content .container div a {
         padding: 1rem;
