@@ -66,7 +66,7 @@ img {
 #main-nav .home-content {
 }
 
-#home-content div {
+#home-content .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
@@ -75,11 +75,21 @@ img {
     background: var(--secondary-color);
 }
 
-#home-content div a {
-    background: var(--secondary-color);
+#home-content .container div {
+    display: 100vw;
     color: #333;
     padding: 2rem;
     margin: 1rem;
+}
+
+#home-content .container .project-div {
+    /*background: url(../img/project-preview/hotel-preview-image.jpg) no-repeat center center/cover; */
+    background: rgba(0,0,0,0.2);
+}
+
+#home-content .container div a {
+    background: var(--secondary-color);
+    color: #333;
     font-weight: bold;
     border-radius: 5px;
 }
