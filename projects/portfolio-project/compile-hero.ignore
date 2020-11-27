@@ -1,5 +1,0 @@
-{
-    "compile-hero": {
-      "ignore": ["css/scss/__variables.scss"]
-    }
-}
