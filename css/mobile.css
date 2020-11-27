@@ -3,6 +3,11 @@
         display: grid;
         grid-template-columns: 1fr;
         align-items: center;
+    }
+
+    #content #left-side-nav .left-side-container {
+        width: 100px;
+    }
 }
 
 @media(max-width:700px){
@@ -27,5 +32,13 @@
 
     #home-content .container div a {
         padding: 1rem;
+    }
+
+    #content {
+        grid-template-columns: 1fr;
+    }
+
+    #content #left-side-nav{
+        display: none;
     }
 }
