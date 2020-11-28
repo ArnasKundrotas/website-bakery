@@ -23,7 +23,7 @@ body {
 }
 
 a {
-    color: #333;
+    color: #1d1c1a;
     text-decoration: none;
 }
 
@@ -38,9 +38,17 @@ img {
 
 #contact-section .container {
     display: grid;
-    grid-template-areas:
-    'tel email avatar'
-    ;
+    grid-template-columns: repeat(8, 1fr);
+
+}
+
+#contact-section .container .tel .red,
+#contact-section .container .email .red {
+    background: #ef3e36;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    padding: 0 10px;
 }
 
 #contact-section .container .contact-container {
