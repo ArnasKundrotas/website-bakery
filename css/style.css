@@ -14,11 +14,11 @@ body::-webkit-scrollbar {
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Aleo', serif;
     line-height: 1.5;
 }
 
@@ -31,13 +31,47 @@ img {
     width: 100%;
 }
 
+/* Contact BAR */
+#contact-section {
+    background: #fff;
+}
+
+#contact-section .container {
+    display: grid;
+    grid-template-areas:
+    'tel email avatar'
+    ;
+}
+
+#contact-section .container .contact-container {
+}
+
+#contact-section .container .avatar {
+    background: url('../img/avatar1.jpg') no-repeat center center/cover;
+    width: 60px;
+    height: 60px;
+}
+
+#contact-section .container .contact-container div:nth-child(even) {
+    margin-left: .2rem;
+}
+
+#contact-section .container .contact-container div:nth-child(odd) {
+    text-align: right;
+}
+
+#contact-section .container .contact-container span {
+    font-weight: bold;
+    text-align: right;
+}
+
+
+
+
 /* Navigation BAR */
 
 #main-nav {
     background: #333;
-    position: sticky;
-    top: 0;
-    z-index: 2;
 }
 
 #main-nav .container {
