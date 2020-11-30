@@ -1,0 +1,79 @@
+.green .container .brand-logo {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.section-stats .col .card-panel h5 {
+    font-size: 1.2rem;
+}
+
+.section-stats .col .card-panel h4 {
+    font-size: 1.5rem;
+}
+
+.loader {
+    position: absolute;
+    top: 40%;
+    left: 47%;
+}
+
+@media (max-width:1366px){
+    .green .container .brand-logo {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:1024px){
+    .green .container .brand-logo {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:812px){
+    .green .container .brand-logo {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width:667px){
+    .loader {
+        position: absolute;
+        top: 40%;
+        left: 45%;
+    }
+
+    .green .container .brand-logo {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width:375px){
+    .loader {
+        position: absolute;
+        top: 40%;
+        left: 43%;
+    }
+
+    .green .container .brand-logo {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width:320px){
+    .loader {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+    }
+
+    .green .container .brand-logo {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width:280px){
+    .green .container .brand-logo {
+        font-size: 1rem;
+    }
+}
+
