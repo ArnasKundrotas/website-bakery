@@ -1,0 +1,78 @@
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.primary-overlay {
+  background: rgba(201, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+@media (max-width:320px) {
+  .main-header {
+    background: url(../img/background2.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+  }
+
+  .showcase .container .row p {
+    display: none;
+  }
+
+  .showcase .container .row .btn {
+    margin: 3px;
+  }
+
+  .section-developers h3 {
+    font-size: 2rem;
+  }
+}
+
+.main-header {
+  background: url(../img/background2.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  color: #fff;
+}
+
+.main-header .showcase {
+  padding-top: 100px;
+}
+
+.active-link {
+  color: red;
+  font-weight: bold;
+}
+
+.section-developers {
+  position: relative;
+
+  background: url('../img/code.jpg');
+  background-size: cover;
+  background-position: center;
+  border-top: #333 solid 5px;
+  border-bottom: #333 solid 5px;
+  min-height: 180px;
+
+}
+
+.section-podcast {
+  position: relative;
+  background: url('../img/circuit.jpg');
+  background-size: cover;
+  background-position: center;
+  border-top: #333 solid 5px;
+  border-bottom: #333 solid 5px;
+  min-height: 160px;
+}
+
+.section-podcast .primary-overlay {
+  background: rgba(201, 0, 0, 0.79;
+}
