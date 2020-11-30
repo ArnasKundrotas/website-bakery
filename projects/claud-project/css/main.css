@@ -21,16 +21,20 @@ body::-webkit-scrollbar {
     color: #fff;
   }
 
-  .showcase .container .row p {
+  .showcase .row p {
     display: none;
   }
 
-  .showcase .container .row .btn {
+  .showcase .row .btn {
     margin: 3px;
   }
 
   .section-developers h3 {
     font-size: 2rem;
+  }
+
+  .main-header-inner .showcase h1 {
+    font-size: 40px;
   }
 }
 
@@ -44,6 +48,18 @@ body::-webkit-scrollbar {
 
 .main-header .showcase {
   padding-top: 100px;
+}
+
+.main-header-inner {
+  background: url(../img/background2.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 350px;
+  color: #fff;
+}
+
+.main-header-inner .showcase {
+  padding-top: 50px;
 }
 
 .active-link {
@@ -74,5 +90,14 @@ body::-webkit-scrollbar {
 }
 
 .section-podcast .primary-overlay {
-  background: rgba(201, 0, 0, 0.79;
+  background: rgba(201, 0, 0, 0.79);
+}
+
+.carousel-item p {
+  font-size: 20px !important;
+}
+
+.btn-extend {
+  display: block;
+  width: 100%;
 }
