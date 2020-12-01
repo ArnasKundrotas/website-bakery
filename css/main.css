@@ -19,3 +19,25 @@
   font-size: 1.5rem;
   margin: 0;
 }
+
+.section-stats .row .col .card-panel {
+  padding: 20px;
+}
+
+.section-stats .row .col .card-panel h6 {
+  display: block;
+  text-align: left;
+  font-size: .8rem;
+  padding-left: 10px;
+}
+
+.section-stats .row .col .card-panel h5 {
+  padding-bottom: 10px;
+}
+
+.section-stats .row .col .card-panel .dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
