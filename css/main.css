@@ -8,6 +8,13 @@
   --item-33: 3;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 
 .section-stats .row .col .card-panel .progress .item-1 {
   width: calc(var(--item-1) + var(--item-2) + var(--item-3));
@@ -68,6 +75,11 @@
 }
 .grey .blue .container .nav-wrapper a {
   font-size: 1.5rem;
+  margin: 0;
+}
+
+.grey .blue .container .nav-wrapper .right a {
+  font-size: 1.1rem;
   margin: 0;
 }
 
