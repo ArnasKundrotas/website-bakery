@@ -127,7 +127,7 @@ p.text {
     background: rgb(173, 11, 11);
     border-radius: 50%;
     position: relative;
-    transform: rotate(135deg);
+    transform: rotate(45deg);
 }
 
 .v-minus {
