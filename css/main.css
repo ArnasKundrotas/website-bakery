@@ -1,12 +1,20 @@
+/* Variables */
+
 :root {
-  --item-1: 82%;
-  --item-2: 15%;
+  --item-1: 80%;
+  --item-2: 17%;
   --item-3: 3%;
 
-  --item-11: 82;
-  --item-22: 15;
+  --item-11: 80;
+  --item-22: 17;
   --item-33: 3;
+
+  --first-color: #e14c22;
+  --second-color: #563c7b;
+  --third-color: #c6ba25;
 }
+
+/* RESET */
 
 * {
   margin: 0;
@@ -14,29 +22,63 @@
   box-sizing: border-box;
 }
 
+body {
+  color: #000;
+}
 
+/* Nav Bar */
+nav .brand-logo {
+  color: #000;
+  font-size: 1.4rem;
+}
+
+nav a,
+nav span {
+  color: #000;
+}
+
+
+/* Language - dot color */
+
+.section-stats .row .col .card-panel .dot-1 {
+  background: var(--first-color);
+}
+
+.section-stats .row .col .card-panel .dot-2 {
+  background: var(--second-color);
+}
+
+.section-stats .row .col .card-panel .dot-3 {
+  background: var(--third-color);
+}
+
+/* Languages - Progress Bars */
 
 .section-stats .row .col .card-panel .progress .item-1 {
   width: calc(var(--item-1) + var(--item-2) + var(--item-3));
-}
-
-.section-stats .row .col .card-panel .progress .item-2-2 {
-  width: calc(var(--item-1) + var(--item-2) + 1%);
+  background: var(--third-color);
 }
 
 .section-stats .row .col .card-panel .progress .item-2 {
   width: calc(var(--item-1) + var(--item-2));
-}
-
-.section-stats .row .col .card-panel .progress .item-3-3 {
-  width: calc(var(--item-1) + 1%);
+  background: var(--second-color);
 }
 
 .section-stats .row .col .card-panel .progress .item-3 {
   width: calc(var(--item-1));
-  border-
+  background: var(--first-color);
 }
 
+/* Languages Progress Br white spaces */
+
+.section-stats .row .col .card-panel .progress .item-2-2 {
+  width: calc(var(--item-1) + var(--item-2) + 1%);
+}
+.section-stats .row .col .card-panel .progress .item-3-3 {
+  width: calc(var(--item-1) + 1%);
+}
+
+/* Percents in the specific language div */
 .section-stats .row .col .card-panel .item-11:after {
   counter-reset: variable var(--item-11);
   content: counter(variable);
@@ -52,10 +94,14 @@
   content: counter(variable);
 }
 
+/* Progress Bar parameters */
+
 .progress {
   height: 7px;
 }
 
+
+/* Other */
 .loader {
   position: absolute;
   top: 40%;
@@ -98,9 +144,12 @@
   padding-bottom: 10px;
 }
 
-.section-stats .row .col .card-panel .dot {
+.section-stats .row .col .card-panel .dot-1,
+.section-stats .row .col .card-panel .dot-2,
+.section-stats .row .col .card-panel .dot-3 {
   display: inline-block;
   width: 7px;
   height: 7px;
   border-radius: 50%;
 }
+
