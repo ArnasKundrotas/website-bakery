@@ -1,3 +1,53 @@
+:root {
+  --item-1: 82%;
+  --item-2: 15%;
+  --item-3: 3%;
+
+  --item-11: 82;
+  --item-22: 15;
+  --item-33: 3;
+}
+
+.section-stats .row .col .card-panel .progress .item-1 {
+  width: calc(var(--item-1) + var(--item-2) + var(--item-3));
+}
+
+.section-stats .row .col .card-panel .progress .item-2-2 {
+  width: calc(var(--item-1) + var(--item-2) + 1%);
+}
+
+.section-stats .row .col .card-panel .progress .item-2 {
+  width: calc(var(--item-1) + var(--item-2));
+}
+
+.section-stats .row .col .card-panel .progress .item-3-3 {
+  width: calc(var(--item-1) + 1%);
+}
+
+.section-stats .row .col .card-panel .progress .item-3 {
+  width: calc(var(--item-1));
+  border-
+}
+
+.section-stats .row .col .card-panel .item-11:after {
+  counter-reset: variable var(--item-11);
+  content: counter(variable);
+}
+
+.section-stats .row .col .card-panel .item-22:after {
+  counter-reset: variable var(--item-22);
+  content: counter(variable);
+}
+
+.section-stats .row .col .card-panel .item-33:after {
+  counter-reset: variable var(--item-33);
+  content: counter(variable);
+}
+
+.progress {
+  height: 7px;
+}
+
 .loader {
   position: absolute;
   top: 40%;
