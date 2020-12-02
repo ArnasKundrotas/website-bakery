@@ -8,6 +8,7 @@
   --item-33: 3;
 }
 
+
 .section-stats .row .col .card-panel .progress .item-1 {
   width: calc(var(--item-1) + var(--item-2) + var(--item-3));
 }
