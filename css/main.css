@@ -1,17 +1,20 @@
 /* Variables */
 
 :root {
-  --item-1: 79%;
-  --item-2: 17%;
-  --item-3: 4%;
+  --item-1: 83%;
+  --item-2: 13%;
+  --item-3: 3%;
+  --item-4: 1%;
 
-  --item-11: 79;
-  --item-22: 17;
-  --item-33: 4;
+  --item-11: 83;
+  --item-22: 13;
+  --item-33: 3;
+  --item-44: 1;
 
   --first-color: #e14c22;
   --second-color: #563c7b;
   --third-color: #c6ba25;
+  --fourth-color: #4225c6;
 }
 
 /* RESET */
@@ -68,19 +71,28 @@ nav span {
   background: var(--third-color);
 }
 
+.section-stats .row .col .card-panel .dot-4 {
+  background: var(--fourth-color);
+}
+
 /* Languages - Progress Bars */
 
 .section-stats .row .col .card-panel .progress .item-1 {
+  width: calc(var(--item-1) + var(--item-2) + var(--item-3) + var(--item-4));
+  background: var(--fourth-color);
+}
+
+.section-stats .row .col .card-panel .progress .item-2 {
   width: calc(var(--item-1) + var(--item-2) + var(--item-3));
   background: var(--third-color);
 }
 
-.section-stats .row .col .card-panel .progress .item-2 {
+.section-stats .row .col .card-panel .progress .item-3 {
   width: calc(var(--item-1) + var(--item-2));
   background: var(--second-color);
 }
 
-.section-stats .row .col .card-panel .progress .item-3 {
+.section-stats .row .col .card-panel .progress .item-4 {
   width: calc(var(--item-1));
   background: var(--first-color);
 }
@@ -91,6 +103,9 @@ nav span {
   width: calc(var(--item-1) + var(--item-2) + 1%);
 }
 .section-stats .row .col .card-panel .progress .item-3-3 {
+  width: calc(var(--item-1) + 1%);
+}
+.section-stats .row .col .card-panel .progress .item-4-4 {
   width: calc(var(--item-1) + 1%);
 }
 
@@ -107,6 +122,11 @@ nav span {
 
 .section-stats .row .col .card-panel .item-33:after {
   counter-reset: variable var(--item-33);
+  content: counter(variable);
+}
+
+.section-stats .row .col .card-panel .item-44:after {
+  counter-reset: variable var(--item-44);
   content: counter(variable);
 }
 
@@ -162,7 +182,8 @@ nav span {
 
 .section-stats .row .col .card-panel .dot-1,
 .section-stats .row .col .card-panel .dot-2,
-.section-stats .row .col .card-panel .dot-3 {
+.section-stats .row .col .card-panel .dot-3,
+.section-stats .row .col .card-panel .dot-4 {
   display: inline-block;
   width: 7px;
   height: 7px;
