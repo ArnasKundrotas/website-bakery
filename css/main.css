@@ -37,6 +37,22 @@ nav span {
   color: #000;
 }
 
+.row {
+  margin: 0;
+}
+
+.section {
+  padding: 0;
+  padding-top: 10px;
+}
+
+.card-panel.github {
+}
+
+.card-panel img {
+  width: 100%;
+}
+
 
 /* Language - dot color */
 

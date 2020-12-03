@@ -1,0 +1,89 @@
+:root {
+    --nav-text-color:  rgb(85, 85, 85);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    height: 50px;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    line-height: 50px;
+}
+
+
+.nav-wrapper {
+    padding: 0;
+    margin: 0;
+    height: 50px;
+}
+
+.nav-wrapper ul li a {
+    color: var(--nav-text-color);
+    font-weight: bold;
+    font-size: .9rem;
+}
+
+.nav-wrapper ul li a:hover {
+    background:transparent;
+    color: red;
+}
+
+.nav-wrapper ul li img{
+    width: 30px;
+    height: 30px;
+    margin-top: 9px;
+}
+
+.nav-wrapper .icon span{
+    height: 50%;
+    width: 50%;
+}
+
+.card .card-content {
+    padding: 5px;
+}
+
+.card .card-content td,
+.card .card-content th {
+    padding: 2px;
+    font-size: 12px;
+}
+
+.display-none {
+    display: none;
+}
+
+.card {
+    margin: .2rem 0 .2rem 0;
+    font-size: 12px;
+}
+
+.card a {
+    line-height: 0;
+}
+
+.row {
+    margin-bottom: 0;
+}
+
+#projects .selected {
+    color: blue;
+    font-weight: bold;
+}
+
+#projects span:hover {
+    color: red;
+}
