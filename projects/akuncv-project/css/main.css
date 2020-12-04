@@ -1,3 +1,9 @@
+@media(max-width: 767px){
+    * {
+        display: none;
+    }
+}
+
 :root {
     --nav-text-color:  rgb(85, 85, 85);
 }
@@ -9,47 +15,60 @@
     color: #000;
 }
 
-body {
+html, body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000;
+    background: rgb(245, 245, 245);
+}
+
+nav ul a {
+    color: #000;
 }
 
 nav {
     height: 50px;
-    padding: 0;
-    margin: 0;
 }
 
-a {
-    line-height: 50px;
+.flex {
+    display: flex;
 }
 
-
-.nav-wrapper {
-    padding: 0;
-    margin: 0;
-    height: 50px;
+.align {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .nav-wrapper ul li a {
+    height: 50px;
     color: var(--nav-text-color);
     font-weight: bold;
     font-size: .9rem;
 }
 
+.dash-icon {
+    margin-top: 0;
+    transform: scale(0.7);
+}
+
+.avatar-icon {
+    margin-top: 0;
+}
+
+.menu-text {
+    height: 50px;
+}
+
+
+
+.nav-wrapper .icon {
+    transform: scale(.7);
+}
+
+
 .nav-wrapper ul li a:hover {
     background:transparent;
     color: red;
-}
-
-.nav-wrapper ul li img{
-    width: 30px;
-    height: 30px;
-    margin-top: 9px;
-}
-
-.nav-wrapper .icon span{
-    height: 50%;
-    width: 50%;
 }
 
 .card .card-content {
@@ -71,6 +90,7 @@ a {
     font-size: 12px;
 }
 
+
 .card a {
     line-height: 0;
 }
@@ -79,11 +99,23 @@ a {
     margin-bottom: 0;
 }
 
-#projects .selected {
+.selected {
     color: blue;
-    font-weight: bold;
 }
 
 #projects span:hover {
     color: red;
 }
+
+.tipas {
+    color: red;
+  }
+  
+.tipas:before {
+    color: green;
+  }
+  
+.reset {
+    height: 100%;
+}
+*/

@@ -1,50 +1,64 @@
 "use strict";
 
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+
 // Start
-var pro2020 = document.getElementsByClassName("pro-2020");
-var pro2019 = document.getElementsByClassName("pro-2019");
-var pro2018 = document.getElementsByClassName("pro-2018");
-var pro2017 = document.getElementsByClassName("pro-2017");
-var pro2016 = document.getElementsByClassName("pro-2016");
-var pro2015 = document.getElementsByClassName("pro-2015"); // Toggle To show info according to Year
-
-function hideProAll(input) {
-  var a = "pro" + input;
-  var b = eval(a);
-  Array.from(b).forEach(function (e) {
-    e.classList.toggle('display-none');
-  });
-}
-
-function addSelectedClass(input) {
-  var a = "pro" + input + " selected";
-  console.log(a);
-} // Fix JS
+// Get all pro elements
+var pro = _toConsumableArray(document.getElementsByClassName("pro")); // Get reset element by id
 
 
-Array.from(pro2019).forEach(function (e) {
-  e.classList.add('display-none');
-});
-Array.from(pro2019).forEach(function (e) {
-  e.classList.add('display-none');
-});
-Array.from(pro2018).forEach(function (e) {
-  e.classList.add('display-none');
-});
-Array.from(pro2017).forEach(function (e) {
-  e.classList.add('display-none');
-});
-Array.from(pro2016).forEach(function (e) {
-  e.classList.add('display-none');
-});
-Array.from(pro2015).forEach(function (e) {
-  e.classList.add('display-none');
-}); // Event listeners
+var reset = _toConsumableArray(document.getElementsByClassName("reset")); // Get Year elements by id
 
-document.addEventListener('click', function (e) {
-  e = e || window.event;
-  var target = e.target,
-      text = target.textContent || target.innerText;
-  hideProAll(text);
-  e.target.classList.toggle('selected');
-}, false); // End
+
+var yearPro = _toConsumableArray(document.getElementsByClassName("year"));
+
+pro.forEach(function (e) {
+  var array = ["2020", "2019", "2018", "2017", "2016", "2015"];
+
+  for (i = 0; i < pro.length; i++) {
+    if (e.innerHTML.indexOf(array[i]) !== -1) {
+      e.classList.add("display-none");
+    }
+
+    ;
+  }
+}); // Event listeners 
+//class="year"
+
+document.addEventListener("click", function (e) {
+  var target = e.target;
+  var text = target.innerText;
+
+  if (target.className !== "reset" && target.className !== "no-reset") {
+    target.classList.toggle("selected");
+    pro.forEach(function (e) {
+      if (e.innerHTML.indexOf(text) !== -1) {
+        e.classList.toggle("display-none");
+      }
+
+      ;
+    });
+  } else if (target.className === "no-reset") {
+    yearPro.forEach(function (e) {
+      e.classList.add("selected");
+    });
+    pro.forEach(function (e) {
+      e.classList.remove("display-none");
+    });
+  } else if (target.className === "reset") {
+    yearPro.forEach(function (e) {
+      e.classList.remove("selected");
+    });
+    pro.forEach(function (e) {
+      e.classList.add("display-none");
+    });
+  } else {
+    alert('Failure');
+  }
+});

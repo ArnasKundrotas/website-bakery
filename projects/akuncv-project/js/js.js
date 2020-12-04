@@ -1,60 +1,63 @@
 // Start
-const pro2020 = document.getElementsByClassName("pro-2020");
-const pro2019 = document.getElementsByClassName("pro-2019");
-const pro2018 = document.getElementsByClassName("pro-2018");
-const pro2017 = document.getElementsByClassName("pro-2017");
-const pro2016 = document.getElementsByClassName("pro-2016");
-const pro2015 = document.getElementsByClassName("pro-2015");
+
+// Get all pro elements
+const pro = [...document.getElementsByClassName("pro")];
+// Get reset element by id
+const reset = [...document.getElementsByClassName("reset")];
+// Get Year elements by id
+const yearPro = [...document.getElementsByClassName("year")];
 
 
-// Toggle To show info according to Year
-function hideProAll(input){
-    let a = "pro" + input;
-    let b = eval(a)
-    Array.from(b).forEach (function(e){
-        e.classList.toggle('display-none');
-    });
-}
-
-function addSelectedClass(input){
-    let a = "pro" + input + " selected";
-    console.log(a);
-}
-
-// Fix JS
-Array.from(pro2019).forEach (function(e){
-    e.classList.add('display-none');
-});
-Array.from(pro2019).forEach (function(e){
-    e.classList.add('display-none');
-});
-Array.from(pro2018).forEach (function(e){
-    e.classList.add('display-none');
-});
-Array.from(pro2017).forEach (function(e){
-    e.classList.add('display-none');
-});
-Array.from(pro2016).forEach (function(e){
-    e.classList.add('display-none');
-});
-Array.from(pro2015).forEach (function(e){
-    e.classList.add('display-none');
-});
-
-// Event listeners
-document.addEventListener('click', function(e) {
-    e = e || window.event;
-    var target = e.target, 
-        text = target.textContent || target.innerText;   
+pro.forEach (function(e) {
+    const array = ["2020","2019","2018","2017","2016","2015"];
     
-    hideProAll(text);
+    for (i=0;i<pro.length;i++){
 
-    e.target.classList.toggle('selected');
+        if(e.innerHTML.indexOf(array[i]) !== -1){
 
-}, false);
+            e.classList.add("display-none");
 
-// End
+        };
+    }
+});
+
+// Event listeners 
+
+//class="year"
+document.addEventListener("click", function(e) {
+    let target = e.target;
+    let text = target.innerText;   
+
+    if (target.className !== "reset" && target.className !== "no-reset"){
+        target.classList.toggle("selected");
+
+        pro.forEach (function(e) {
+            if(e.innerHTML.indexOf(text) !== -1) {
+                e.classList.toggle("display-none");
+            };
+        });
 
 
+    } else if (target.className === "no-reset") {
+        yearPro.forEach (function(e) {
+            e.classList.add("selected");
+        });
 
+        pro.forEach (function(e) {
+            e.classList.remove("display-none");
+        });
 
+    } else if (target.className === "reset") {
+        yearPro.forEach (function(e) {
+            e.classList.remove("selected");
+        });
+
+        pro.forEach (function(e) {
+            e.classList.add("display-none");
+        });
+
+    } else {
+        alert ('Failure');
+    }
+    
+});

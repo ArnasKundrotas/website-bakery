@@ -1,15 +1,15 @@
 <?php
     // Variables
-    $db_localhost = "akuncv.lt";
-    $db_usernamas = "prkta_arnas";
-    $db_password = "Nasrat383riko";
-    $db_name = 'prktra_akuncv';
+    $servername = "localhost";
+    $username = "prktra_arnas";
+    $password = "Nasrat383riko";
+    $db_name = "prktra_akuncv";
+    $charset = "utf8";
 
-    // Create Connection
-    $conn = mysqli_connect($db_localhost, $db_username, $db_password, $db_name);
+    $conn = mysqli_connect($servername, $username, $password, $db_name);
 
-    // Check connection
+    mysqli_set_charset ($conn, $charset);
+
     if(mysqli_connect_errno()){
-        //connection failed
-        echo 'failed to connect to mysql' . mysqli_connect_errno;
+      echo 'Failed to connect to MySQL' . mysqli_connect_errno();
     }
