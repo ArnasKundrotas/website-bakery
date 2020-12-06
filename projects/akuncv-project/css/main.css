@@ -4,6 +4,12 @@
     }
 }
 
+.loader {
+    position: absolute;
+    top: 40%;
+    left: 37%;
+}
+
 :root {
     --nav-text-color:  rgb(85, 85, 85);
 }
@@ -44,15 +50,6 @@ nav {
     color: var(--nav-text-color);
     font-weight: bold;
     font-size: .9rem;
-}
-
-.dash-icon {
-    margin-top: 0;
-    transform: scale(0.7);
-}
-
-.avatar-icon {
-    margin-top: 0;
 }
 
 .menu-text {
@@ -111,7 +108,21 @@ td .star:hover {
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
+/* Dashboard Icons */
 
+.dash-icon {
+    transform: scale(0.7);
+}
+
+.dash-button-icon {
+    margin-top: 0;
+    transform: scale(0.7);
+}
+
+.avatar-icon {
+    margin-top: 0;
+}
+/* --------------------------------*/
 
 .display-none {
     display: none;

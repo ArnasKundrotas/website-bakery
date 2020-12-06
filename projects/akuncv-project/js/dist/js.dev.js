@@ -9,27 +9,21 @@ function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.
 function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
 
 // Start
-// Get all pro elements
+// Get element by Tag
+var eTag = _toConsumableArray(document.getElementsByTagName("section")); // Get all pro elements
+
+
 var pro = _toConsumableArray(document.getElementsByClassName("pro")); // Get reset element by id
 
 
 var reset = _toConsumableArray(document.getElementsByClassName("reset")); // Get Year elements by id
 
 
-var yearPro = _toConsumableArray(document.getElementsByClassName("year"));
-
-pro.forEach(function (e) {
-  var array = ["2019", "2018", "2017", "2016", "2015"];
-
-  for (i = 0; i < pro.length; i++) {
-    if (e.innerHTML.indexOf(array[i]) !== -1) {
-      e.classList.add("display-none");
-    }
-
-    ;
-  }
-}); // Event listeners 
+var yearPro = _toConsumableArray(document.getElementsByClassName("year")); // Functions
+// -----------------------------------------------------------------
+// Event listeners 
 //class="year"
+
 
 document.addEventListener("click", function (e) {
   var target = e.target;
@@ -37,13 +31,16 @@ document.addEventListener("click", function (e) {
 
   if (target.className !== "reset" && target.className !== "no-reset") {
     target.classList.toggle("selected");
-    pro.forEach(function (e) {
-      if (e.innerHTML.indexOf(text) !== -1) {
-        e.classList.toggle("display-none");
-      }
 
-      ;
-    }); // Check button event listener
+    xmlhttp.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("content").innerHTML = this.responseText;
+      }
+    };
+
+    var a = "php/year_".concat(text, ".php?t=");
+    xmlhttp.open("GET", a + Math.random, true);
+    xmlhttp.send(); // Check button event listener
   } else if (target.className === "no-reset") {
     yearPro.forEach(function (e) {
       e.classList.add("selected");
