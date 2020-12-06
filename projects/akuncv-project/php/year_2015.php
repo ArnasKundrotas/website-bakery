@@ -7,5 +7,5 @@
     mysqli_close($conn);
     // var_dump($posts);
 
-    require('projects.php');
+    require('table.php');
 ?>

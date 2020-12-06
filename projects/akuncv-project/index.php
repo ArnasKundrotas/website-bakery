@@ -55,7 +55,7 @@
                 <div class="card-content">
                     
                     <a href="#"><img class="reset" src="img/close-icon.png"></a>
-                    <a href="#"><img class="no-reset" src="img/check.png"></a>
+                    <a class="no-reset" href="#">ALL</a>
 
                     <a href="#" class="black-text"><span class="year" style="margin: 5px 5px;">2020</span></a> 
                     <a href="#" class="black-text"><span class="year" style="margin: 5px 5px;">2019</span></a> 
@@ -64,7 +64,25 @@
                     <a href="#" class="black-text"><span class="year" style="margin: 5px 5px;">2016</span></a> 
                     <a href="#" class="black-text"><span class="year" style="margin: 5px 5px;">2015</span></a> 
                     
-                    <div id="content"></div>
+                    <table>
+                        <thead>
+                            <th width="25"><div class="star"></div></th>
+                            <th width="50">Data</th>
+                            <th width="240">Pavadinimas</th>
+                            <th width="30"></th>
+                            <th width="400">Kategorija</th>
+                            <th width="65">Plotas</th>
+                            <th width="65">Stadija</th>
+                            <th width="80"></th>
+                            <th width="150">Projekto dalys</th>
+                            <th width="100"></th>
+                            <th width="100">Projektuotojas</th>
+                            <th width="100"></th>
+                        </thead>
+                        <tbody id="content">
+
+                        </tbody>
+                    </table>
                 </div>
 
             </div>

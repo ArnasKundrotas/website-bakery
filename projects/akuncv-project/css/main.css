@@ -27,6 +27,11 @@ html, body {
     background: rgb(245, 245, 245);
 }
 
+a {
+    text-decoration: none;
+    color: #000;
+}
+
 nav ul a {
     color: #000;
 }
@@ -171,5 +176,6 @@ td .star:hover {
 
 .reset {
     transform: scale(0.7);
+    padding-right: 5px;
 }
 
