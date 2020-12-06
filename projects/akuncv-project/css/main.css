@@ -81,6 +81,38 @@ nav {
     font-size: 12px;
 }
 
+.card .card-content tr {
+    padding: 4px;
+    width: 10px;
+    height: 10px;
+}
+
+.col .card .card-content table tr th .star {
+    content: url('../img/svg/star-1.svg');
+    width: 10px;
+    height: 10px;
+}
+
+.col .card .card-content table tr td .star {
+    content: url('../img/svg/star-2.svg');
+    width: 10px;
+    height: 10px;
+}
+
+/* Star Icon rotate */
+td .star:hover {
+    cursor: pointer;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation: spin 4s linear infinite;
+    
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+
 .display-none {
     display: none;
 }
@@ -118,4 +150,15 @@ nav {
 .reset {
     height: 100%;
 }
-*/
+
+.kat-icon img {
+    padding: 0;
+    margin: 0;
+    width: 25px;
+    height: 25px;
+}
+
+.reset {
+    transform: scale(0.7);
+}
+

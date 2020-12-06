@@ -19,7 +19,7 @@ var reset = _toConsumableArray(document.getElementsByClassName("reset")); // Get
 var yearPro = _toConsumableArray(document.getElementsByClassName("year"));
 
 pro.forEach(function (e) {
-  var array = ["2020", "2019", "2018", "2017", "2016", "2015"];
+  var array = ["2019", "2018", "2017", "2016", "2015"];
 
   for (i = 0; i < pro.length; i++) {
     if (e.innerHTML.indexOf(array[i]) !== -1) {
@@ -33,7 +33,7 @@ pro.forEach(function (e) {
 
 document.addEventListener("click", function (e) {
   var target = e.target;
-  var text = target.innerText;
+  var text = target.innerText; // Toggle year buttons
 
   if (target.className !== "reset" && target.className !== "no-reset") {
     target.classList.toggle("selected");
@@ -43,21 +43,21 @@ document.addEventListener("click", function (e) {
       }
 
       ;
-    });
+    }); // Check button event listener
   } else if (target.className === "no-reset") {
     yearPro.forEach(function (e) {
       e.classList.add("selected");
     });
     pro.forEach(function (e) {
       e.classList.remove("display-none");
-    });
+    }); // Close button evenet listener
   } else if (target.className === "reset") {
     yearPro.forEach(function (e) {
       e.classList.remove("selected");
     });
     pro.forEach(function (e) {
       e.classList.add("display-none");
-    });
+    }); // Error
   } else {
     alert('Failure');
   }
