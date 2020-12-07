@@ -1,3 +1,6 @@
+<?php require('projects/akuncv-project/php/requirehttps.php'); ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
