@@ -16,11 +16,11 @@
         <div class="nav-wrapper">
 
             <ul class="left">
-                <?php require('php/dashboard-left.php'); ?>
+                <?php require('projektai/akuncv-project/php/dashboard-left.php'); ?>
             </ul>
 
             <ul class="right">
-                <?php require('php/dashboard-icons.php'); ?>
+                <?php require('projektai/akuncv-project/php/dashboard-icons.php'); ?>
             </ul>
         </div>
     </nav>
