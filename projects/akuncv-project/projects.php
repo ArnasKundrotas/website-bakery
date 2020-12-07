@@ -14,7 +14,7 @@
     <nav class="white">
         <div class="nav-wrapper">
 
-            <ul class="left">
+        <ul class="left">
                 <?php require('php/dashboard-left.php'); ?>
             </ul>
 
@@ -30,11 +30,8 @@
         <div class="col s12">
 
             <div class="card">
-                
                 <div class="card-content">
-                    
                     <h1>Projektai</h1>
-
                     <a href="#"><img class="reset" src="img/close-icon.png"></a>
                     <a class="no-reset" href="#">ALL</a>
 

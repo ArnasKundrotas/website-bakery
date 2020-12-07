@@ -68,7 +68,7 @@ document.addEventListener("click", function (e) {
   var text = target.innerText; // 2020
   // Toggle year buttons
 
-  if (target.className !== "reset" && target.className !== "no-reset") {
+  if (target.className === "year") {
     target.classList.add("selected");
     yearPro.forEach(function (e) {
       if (text !== e.innerText) {
@@ -138,8 +138,7 @@ document.addEventListener("click", function (e) {
       for (var _iterator3 = yearPro[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
         var item1 = _step3.value;
         item1.classList.remove("selected");
-      } // Error
-
+      }
     } catch (err) {
       _didIteratorError3 = true;
       _iteratorError3 = err;
@@ -154,7 +153,6 @@ document.addEventListener("click", function (e) {
         }
       }
     }
-  } else {
-    alert('Failure');
+  } else {// Error
   }
 });

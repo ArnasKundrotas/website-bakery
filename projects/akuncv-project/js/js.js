@@ -47,7 +47,7 @@ document.addEventListener("click", function(e) {
     let text = target.innerText;   // 2020
 
         // Toggle year buttons
-    if (target.className !== "reset" && target.className !== "no-reset"){
+    if (target.className === "year"){
         
         target.classList.add("selected");
 
@@ -98,10 +98,9 @@ document.addEventListener("click", function(e) {
         for (var item1 of yearPro) {
             item1.classList.remove("selected");
         }
-
-        // Error
+        
     } else {
-        alert ('Failure');
+        // Error
     }
     
 });
