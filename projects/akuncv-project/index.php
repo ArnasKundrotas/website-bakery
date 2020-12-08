@@ -35,8 +35,6 @@
                 
                 <div class="card-content">
                     
-                    <h1>Projektai</h1>
-
                     <a href="#"><img class="reset" src="img/close-icon.png"></a>
                     <a class="no-reset" href="#">ALL</a>
 
