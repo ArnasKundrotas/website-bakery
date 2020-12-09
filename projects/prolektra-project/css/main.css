@@ -1,0 +1,189 @@
+@media(max-width: 767px){
+    * {
+        display: none;
+    }
+}
+
+.loader {
+    position: absolute;
+    top: 40%;
+    left: 37%;
+}
+
+:root {
+    --nav-text-color:  rgb(85, 85, 85);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000;
+}
+
+html, body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000;
+    background: rgb(245, 245, 245);
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 20px;
+}
+
+nav ul a {
+    color: #000;
+}
+
+nav {
+    height: 50px;
+}
+
+.flex {
+    display: flex;
+}
+
+.align {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-wrapper ul li a {
+    height: 50px;
+    color: var(--nav-text-color);
+    font-weight: bold;
+    font-size: .9rem;
+}
+
+.menu-text {
+    height: 50px;
+}
+
+
+
+.nav-wrapper .icon {
+    transform: scale(.7);
+}
+
+
+.nav-wrapper ul li a:hover {
+    background:transparent;
+    color: red;
+}
+
+.card .card-content {
+    padding: 5px;
+}
+
+.card .card-content td,
+.card .card-content th {
+    padding: 2px;
+    font-size: 12px;
+}
+
+.card .card-content tr {
+    padding: 4px;
+    width: 10px;
+    height: 10px;
+}
+
+.col .card .card-content table tr th .star {
+    content: url('../img/svg/star-1.svg');
+    width: 10px;
+    height: 10px;
+}
+
+.col .card .card-content table tr td .star {
+    content: url('../img/svg/star-2.svg');
+    width: 10px;
+    height: 10px;
+}
+
+/* Star Icon rotate */
+td .star:hover {
+    cursor: pointer;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation: spin 4s linear infinite;
+    
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+/* Dashboard Icons */
+
+.dash-icon {
+    transform: scale(0.7);
+}
+
+.dash-button-icon {
+    margin-top: 0;
+    transform: scale(0.7);
+}
+
+.avatar-icon {
+    margin-top: 0;
+}
+/* --------------------------------*/
+
+.display-none {
+    display: none;
+}
+
+.card {
+    margin: .2rem 0 .2rem 0;
+    font-size: 12px;
+}
+
+
+.card a {
+    line-height: 0;
+}
+
+.row {
+    margin-bottom: 0;
+}
+
+.selected {
+    color: blue;
+}
+
+#projects span:hover {
+    color: red;
+}
+
+.tipas {
+    color: red;
+  }
+  
+.tipas:before {
+    color: green;
+  }
+  
+.reset {
+    height: 100%;
+}
+
+.kat-icon img {
+    padding: 0;
+    margin: 0;
+    width: 25px;
+    height: 25px;
+}
+
+.reset {
+    transform: scale(0.7);
+    padding-right: 5px;
+}
+
+
+
